@@ -54,42 +54,45 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.About-A-Song-of-Ice-and-Fire, .The-Books, .Main-Houses, .External-Links-and-Mentions, .About-Me-Contact {
+.About-A-Song-of-Ice-and-Fire, .The-Books, .External-Links-and-Mentions, .About-Me-Contact {
     display: flex;
     flex-direction: row;
     max-width: 1500px;
-    background-color: #fff;        
+    background-color: #fff;
+    border: 1px solid #333;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: justify;
     padding: 10px;
     margin: 10px;
 }
-.Westeros, .About-the-Author {
+.Westeros, .About-the-Author, .Main-Houses {
     display: flex;
     flex-direction: column;
     max-width: 1500px;
-    background-color: #fff;        
+    background-color: #fff;
+    border: 1px solid #333;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
     padding: 10px;
     margin: 10px;
 }
-.aboutasoiaf1, .thebooks1, .mainhouses1, .extlinks1 {
+.aboutasoiaf1, .thebooks1, .extlinks1 {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 30%;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.westeros1, .abouttheauthor1, .aboutmecontact1a, .aboutmecontact2a {
+.westeros1, .abouttheauthor1, .aboutmecontact1a, .aboutmecontact2a, .mainhouses1 {
     display: flex;
     justify-content: center;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .About-Me-Contact > * {
     width: 50%;
@@ -99,16 +102,21 @@ body {
     margin: 0px 10px;
 }
 .aboutasoiaf1a, .thebooks1a, .mainhouses1a, .extlinks1a {
-    align-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 5px;
 }
-.aboutasoiaf2, .thebooks2, .mainhouses2, .extlinks2 {
+.aboutasoiaf1a {
+    justify-content: space-around;
+}
+.aboutasoiaf2, .thebooks2, .extlinks2 {
     display: flex;
     flex-direction: column;
     width: 70%;
     padding: 20px;
 }
-.westeros2, .abouttheauthor2 {
+.westeros2, .abouttheauthor2, .mainhouses2 {
     display: flex;
     flex-direction: row;
     padding: 20px;
@@ -142,6 +150,13 @@ body {
 .aboutmecontact2bb a:hover {
     filter: opacity(50%);
 }
+.books1a, .iceandfireimg {
+    width: 80%;
+    margin: 2px;
+}
+.books2a {
+    display: none;
+}
 .thebooks2b img, .aboutasoiaf2b img {
     width: 100%;
 }
@@ -153,13 +168,17 @@ body {
     background-color: black;
     border-radius: 100%;
 }
-.aboutasoiafimg, .thebooksimg, .westerosimg {
+.aboutasoiafimg, .thebooksimg, .westerosimg1, .iceandfireimg, .books1a, .books2a {
     border-radius: 10px;
+}
+.westerosimg2 {
+    display: none;
 }
 h1, h2 {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-transform: uppercase;        
+    text-transform: uppercase;
+    color: #fff;
 }
 table, th, td {
     border: 1px solid black;
@@ -217,12 +236,18 @@ a:hover {
 footer {
     text-align: center;
 }
+.aboutasoiaf1, .thebooks1, .mainhouses1, .westeros1, .abouttheauthor1, .extlinks1, .aboutmecontact1a, .aboutmecontact2a {
+    background-color: #333;
+    color: #fff;
+}
 @media only screen and (max-width: 600px) {
     * {
         box-sizing: border-box;
     }
     header {
         display: flex;
+        position: relative;
+        flex-direction: column;
         align-items: center;
         background-color: #333;
         color: #fff;
@@ -231,7 +256,16 @@ footer {
         text-transform: uppercase;
     }
     .sword {
-        display: none;
+        width: 40%;
+    }
+    #rightsword {
+        transform: scaleX(-1);
+    }
+    .sworddiv {
+        width: 100%;
+    }
+    .centerhead {
+        width: 100%;
     }
     nav {
         text-align: center;
@@ -261,9 +295,10 @@ footer {
     .About-A-Song-of-Ice-and-Fire, .The-Books, .Main-Houses, .External-Links-and-Mentions, .About-Me-Contact {
         display: flex;
         flex-direction: column;
+        align-items: center;
         background-color: #fff;        
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         text-align: justify;
         padding: 10px;
         margin: 10px;
@@ -273,7 +308,7 @@ footer {
         flex-direction: column;
         background-color: #fff;        
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         text-align: center;
         padding: 10px;
         margin: 10px;
@@ -284,17 +319,18 @@ footer {
     .aboutasoiaf1, .thebooks1, .mainhouses1, .extlinks1 {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         width: 100%;
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
     .westeros1, .abouttheauthor1, .aboutmecontact1a, .aboutmecontact2a {
         display: flex;
         justify-content: center;
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
     .About-Me-Contact > * {
         width: 100%;
@@ -349,6 +385,13 @@ footer {
     .aboutmecontact2bb a:hover {
         filter: opacity(50%);
     }
+    .books1a {
+        display: none;
+    }
+    .books2a {
+        display: block;
+        width: 100%;
+    }
     .thebooks2b img, .aboutasoiaf2b img {
         width: 100%;
     }
@@ -360,8 +403,17 @@ footer {
         background-color: black;
         border-radius: 100%;
     }
-    .aboutasoiafimg, .thebooksimg, .westerosimg {
+    .aboutasoiafimg, .westerosimg2 {
         border-radius: 10px;
+    }
+    .westerosimg1, .iceandfireimg {
+        display: none;
+    }
+    .westerosimg2 {
+        display: block;
+    }
+    .thebooksimg {
+        display: none;
     }
     h1, h2 {
         text-align: center;

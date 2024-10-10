@@ -207,6 +207,13 @@ table img {
     width: 5%;
     z-index: 2;
 }
+#chatballoon {
+    position: fixed;
+    bottom: 12%;
+    left: 4%;
+    width: 8%;
+    z-index: 2;
+}
 .stark:hover {
     background-image: linear-gradient(to bottom right, white, gray);
 }
@@ -238,7 +245,10 @@ table img {
     background-image: linear-gradient(to bottom right, red, black);
     color: white;
 }
-a:hover {
+.External-Links-and-Mentions a:visited {
+    color: black;
+  }
+a:hover, .External-Links-and-Mentions a:hover {
     color:red
 }
 footer {
@@ -399,6 +409,7 @@ footer {
     .books2a {
         display: block;
         width: 100%;
+        margin-bottom: 3%;
     }
     .thebooks2b img, .aboutasoiaf2b img {
         width: 100%;
@@ -453,6 +464,13 @@ footer {
         top: 5%;
         left: 0;
         width: 15%;
+        z-index: 2;
+    }
+    #chatballoon {
+        position: fixed;
+        top: 3%;
+        left: 13%;
+        width: 12%;
         z-index: 2;
     }
     .stark:hover {

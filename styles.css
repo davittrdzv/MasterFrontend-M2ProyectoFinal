@@ -199,6 +199,14 @@ table img {
     max-width: 100%;
     height: auto;
 }
+#meimg {
+    transform: rotate(90deg);
+    position: fixed;
+    bottom: 5%;
+    left: 0;
+    width: 5%;
+    z-index: 2;
+}
 .stark:hover {
     background-image: linear-gradient(to bottom right, white, gray);
 }
@@ -438,6 +446,14 @@ footer {
     table img {
         max-width: 100%;
         height: auto;
+    }
+    #meimg {
+        transform: rotate(90deg);
+        position: fixed;
+        top: 5%;
+        left: 0;
+        width: 15%;
+        z-index: 2;
     }
     .stark:hover {
         background-image: linear-gradient(to bottom right, white, gray);

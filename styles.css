@@ -468,9 +468,9 @@ footer {
     }
     #chatballoon {
         position: fixed;
-        top: 3%;
+        top: 2%;
         left: 13%;
-        width: 12%;
+        width: 15%;
         z-index: 2;
     }
     .stark:hover {

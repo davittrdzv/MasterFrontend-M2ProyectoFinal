@@ -511,3 +511,257 @@ footer {
         text-align: center;
     }
 }
+@media only screen and (max-width: 832px) {
+    * {
+        box-sizing: border-box;
+    }
+    header {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-transform: uppercase;
+    }
+    .sword {
+        width: 40%;
+    }
+    #rightsword {
+        transform: scaleX(-1);
+    }
+    .sworddiv {
+        width: 100%;
+    }
+    .centerhead {
+        width: 100%;
+    }
+    nav {
+        text-align: center;
+        background-color: #333;
+        position: static;
+        top: 0;
+        width: 100%;
+    }
+    nav div {    
+        align-items: center;
+    }
+    nav a {
+        color: #fff;
+    }
+    .nav {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    body {
+        background-color: #f4f4f4;
+        text-align: justify;
+        font-family: 'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .About-A-Song-of-Ice-and-Fire, .The-Books, .Main-Houses, .External-Links-and-Mentions, .About-Me-Contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;        
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        text-align: justify;
+        padding: 10px;
+        margin: 10px;
+    }
+    .Westeros, .About-the-Author {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;        
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+    }
+    .aboutmecontact1 {
+        width: 100%;
+    }
+    .aboutasoiaf1, .thebooks1, .mainhouses1, .extlinks1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .westeros1, .abouttheauthor1, .aboutmecontact1a, .aboutmecontact2a {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .About-Me-Contact > * {
+        width: 100%;
+        margin: 0px 10px;
+    }
+    .aboutmecontact1b,  .aboutmecontact2b {
+        margin: 0px 10px;
+    }
+    .aboutasoiaf1a, .thebooks1a, .mainhouses1a, .extlinks1a {
+        align-content: flex-start;
+        margin: 5px;
+    }
+    .aboutasoiaf2, .thebooks2, .mainhouses2, .extlinks2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+    .westeros2, .abouttheauthor2 {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .westeros2a, .abouttheauthor2b {
+        width: 100%;
+        order: 1;
+    }
+    .westeros2b, .abouttheauthor2a {
+        order: 0;
+        width: 100%;
+        text-align: justify;
+    }
+    .aboutasoiaf2a, .thebooks2a, .mainhouses2a, .extlinks2a {
+        align-content: center;
+        margin: 5px;
+    }
+    .aboutasoiaf2b, .thebooks2b {
+        padding: 20px;
+    }
+    .aboutmecontact2ba input {
+        width: 100%;
+    }
+    #submitbutton {
+        width: auto;
+    }
+    .aboutmecontact2bb {
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        margin-top: 2%;
+    }
+    .aboutmecontact2bb a:hover {
+        filter: opacity(50%);
+    }
+    .books1a {
+        display: none;
+    }
+    .books2a {
+        display: block;
+        width: 65%;
+        margin-bottom: 3%;
+    }
+    .thebooks2b img, .aboutasoiaf2b img {
+        width: 100%;
+    }
+    .westeros2a img, .abouttheauthor2b img {
+        width: 90%;
+    }
+    .abouttheauthor2b img {
+        padding-top: 5%;
+        background-color: black;
+        border-radius: 100%;
+    }
+    .aboutasoiafimg, .westerosimg2 {
+        border-radius: 10px;
+    }
+    .westerosimg1, .iceandfireimg {
+        display: none;
+    }
+    .westerosimg2 {
+        display: block;
+    }
+    .thebooksimg {
+        display: none;
+    }
+    h1, h2 {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-transform: uppercase;        
+    }
+    table, th, td {
+        border: 1px solid black;
+        text-align: center;
+        margin: auto;
+    }
+    table {
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 8px;
+        text-align: center;
+        word-wrap: break-word;
+    }
+    table img {
+        max-width: 100%;
+        height: auto;
+    }
+    #meimg {
+        transform: rotate(90deg);
+        position: fixed;
+        top: 5%;
+        left: 0;
+        width: 15%;
+        z-index: 2;
+    }
+    #chatballoon {
+        position: fixed;
+        top: 2%;
+        left: 13%;
+        width: 15%;
+        z-index: 2;
+    }
+    .stark:hover {
+        background-image: linear-gradient(to bottom right, white, gray);
+    }
+    .arryn:hover {
+        background-image: linear-gradient(to bottom right, skyblue, white);
+    }
+    .tully:hover {
+        background-image: linear-gradient(to bottom right, blue, red);
+        color: white;
+    }
+    .greyjoy:hover {
+        background-image: linear-gradient(to bottom right, black, gold);
+        color: white;
+    }
+    .lannister:hover {
+        background-image: linear-gradient(to bottom right, gold, crimson);
+    }
+    .baratheon:hover {
+        background-image: linear-gradient(to bottom right, gold, black);
+        color: white;
+    }
+    .tyrell:hover {
+        background-image: linear-gradient(to bottom right, green, gold);
+    }
+    .martell:hover {
+        background-image: linear-gradient(to bottom right, red, orange);
+    }
+    .targaryen:hover {
+        background-image: linear-gradient(to bottom right, red, black);
+        color: white;
+    }
+    a:hover {
+        color:red
+    }
+    footer {
+        text-align: center;
+    }
+}
